@@ -1,0 +1,2199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>waterland</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Anton&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barriecito&family=Caveat:wght@400..700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Comfortaa:wght@300..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Noto+Serif+Telugu:wght@100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+ 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0%;
+        margin: 0%;
+      }
+      body{
+        font-family: "Inter", serif;
+      }
+      nav{
+        display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+      padding: 2%;
+      font-size: 1.5rem;
+      }
+      .nav-right{
+        justify-content: space-between;
+        display: flex;
+        margin-right: 5%;
+      }
+      .nav-center a{
+        margin-right: 10%;
+        text-decoration: none;
+        color: black;
+      }
+      #menu{
+        display:none;
+      }
+      .nav-right i{
+       
+      gap: 2% 3%;
+      
+      
+      }
+      
+      #get-start{
+      padding: 5%;
+      border-radius: 1rem;
+      background-color:rgb(60, 190, 238);
+      color: white;
+      width: 100%;
+      height: vh;
+      font-size: 1rem;
+      
+      
+      
+      }
+      header{
+        position: sticky;
+        top: -1%;
+        background-color: white;
+        z-index: 4;
+      }
+      @media (max-width:608px) {
+        
+        .el1{
+          flex-direction: column;
+       padding: 0% 0%;
+       height: 7000vh;
+      
+          
+        }
+       
+        .el1a{
+          padding: 0% 0%;
+          flex-basis: 100%;
+        }
+        .el1a h4{
+          font-size: 1.2rem;
+          width: 100vw;
+          padding: 8% 0%;
+          margin-left: 0%;
+         
+        }
+       .el1a h1{
+        font-size: 2rem;
+        padding: 0% 0%;
+       }
+       .el1a button{
+        width: 60%;
+        height: 9vh;
+        padding: 0% 0%;
+        margin-left: -5%;
+       }
+       .el1a p{
+        padding: 8% 0%;
+        line-height: 1.5;
+       }
+        .el1b{
+           height: auto;
+        }
+        .el2{
+          flex-direction: column;
+        background-size:60vh;
+         
+        }
+        .el2a,.el2b,.el2c{
+          height: 60vh;
+          background-size:60vh;
+        }
+        .el3{
+          flex-direction: column;
+         
+        }
+        .el3child {
+          margin-top:150%;
+          
+        }
+        .el3b{
+          margin-left: 8%;
+          margin-top: 30%;
+        }
+         .el3child #f2{
+          font-size: 1.9rem;
+        }
+        .el2a{
+          margin-top: 130%;
+        }
+        .el1{
+          height: 80vh;
+          background-size: cover;
+        }
+      }
+      
+        .el1 {
+        height: 100vh;
+        width: 100%;
+        
+        background-image: url(carousel-1.jpg);
+        /* backdrop-filter: blur(10px);*/
+        ;
+       
+        
+      } 
+      .el1black{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        gap: 3%;
+        padding: 5% 7%;
+        background-color:rgba(0, 0, 0, 0.7);
+      }
+      
+      .el1a {
+        flex-basis: 100%;
+      }
+      .el1b {
+        background-color: whitesmoke;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        flex-basis: 50%;
+        line-height: 1.5;
+        margin-top: 3%;
+        background: rgba( 255, 255, 255, 0.15 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 2.5px );
+        -webkit-backdrop-filter: blur( 2.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        height: 70vh;
+      }
+
+      .c {
+        padding: 3% 4%;
+        color: white;
+        line-height: 1.5;
+        font-size: 1.2rem;
+      }
+      .a {
+        padding: 3% 4%;
+        line-height: 1.6;
+        font-weight: 700;
+        font-size: 1.6rem;
+      }
+      .b {
+        padding: 3% 4%;
+        line-height: 1.2;
+        font-weight: 700;
+        font-size: calc(1.275rem + 0.3vw);
+        font-size: 3rem;
+      }
+      .k {
+        width: 30%;
+        padding: 2.5%;
+        background-color: rgb(60, 190, 238);
+        border-radius: 50rem;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        margin-left: 5%;
+        margin-top: 5%;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+      }
+
+      #a1 {
+        padding: 3% 4%;
+        width: 90%;
+        margin-left: 4.5%;
+        border-radius: 0.8rem;
+        margin-top: 5%;
+        box-shadow: rgba(60, 190, 238, 0.25);
+        outline: none;
+        border: none;
+      }
+      #a2 {
+        padding: 3% 4%;
+        width: 45%;
+        margin-left: 4.5%;
+        border-radius: 0.8rem;
+        margin-top: 5%;
+        box-shadow: rgba(60, 190, 238, 0.25);
+        outline: none;
+        border: none;
+      }
+      #a3 {
+        padding: 3% 3%;
+        width: 44%;
+        margin-left: 0.8%;
+        border-radius: 0.8rem;
+        margin-top: 5%;
+        box-shadow: rgba(60, 190, 238, 0.25);
+        outline: none;
+        font-weight: 100;
+        border: none;
+      }
+      .hello {
+        padding: 3% 4%;
+        width: 90%;
+        margin-left: 4.5%;
+        border-radius: 0.8rem;
+        margin-top: 5%;
+        box-shadow: rgba(60, 190, 238, 0.25);
+        outline: none;
+        font-weight: 100;
+        border: none;
+      }
+      .a6 {
+        padding: 3% 3%;
+        width: 90%;
+        margin-left: 4.5%;
+        border-radius: 0.8rem;
+        margin-top: 5%;
+        box-shadow: rgba(60, 190, 238, 0.25);
+        outline: none;
+        font-weight: 600;
+        background-color: rgb(60, 190, 238);
+        color: white;
+        border: none;
+      }
+
+      
+      .el2 {
+        gap: 3%;
+        padding: 5% 7%;
+        display: flex;
+        
+        margin-top: 3%;
+        font-family: "Open Sans", sans-serif;
+        height: 65vh;
+      }
+    
+      .el2a {
+        flex-basis: 50%;
+       
+       
+        border-radius: 1rem;
+        flex-basis: 50%;
+        background: url(feature-1.jpg);
+        color: white;
+        min-height: 45vh;
+      }
+      .el2b {
+        border-radius: 1rem;
+        background-image: url(feature-2.jpg);
+        min-height: 45vh;
+        color: white;
+        flex-basis: 50%;
+       
+      }
+
+      .el2c {
+        border-radius: 1rem;
+        background-image: url(feature-3.jpg);
+        min-height: 45vh;
+        color: white;
+        flex-basis: 50%;
+      }
+      .R {
+        width: 40%;
+        padding: 2.5%;
+        background-color: rgb(60, 190, 238);
+        border-radius: 50rem;
+        font-weight: 600;
+        color: white;
+        margin-left: 1%;
+        margin-top: 5%;
+        border: none;
+        height: 6vh;
+        
+      }
+      .el3 {
+        
+        margin-top: 2%;
+        width: 100%;
+        display: flex;
+        gap: 2%;
+      }
+      .el3a {
+        
+        padding-left: 7%;
+        margin-top: 0%;
+        flex-basis: 50%;
+      }
+      .el3b {
+      
+       position: relative;
+        flex-basis: 50%;
+      }
+      #f2 {
+        font-size: 3.2rem;
+        padding-top: 3%;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 4%;
+      }
+      #f1 {
+        font-family: "Montserrat", sans-serif;
+        word-spacing: 1.3;
+        letter-spacing: 0.1rem;
+        font-weight: 500;
+      }
+      #f3 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 100;
+        color: gray;
+      }
+      .el3a1 {
+        display: flex;
+
+        width: 100%;
+        height: 50vh;
+       flex-wrap: wrap;
+        gap: 3% 7%;
+        margin-top: 8%;
+        height: 30vh;
+      }
+      .h1 {
+        display: grid;
+        grid-template-columns: 30% 90%;
+        gap: 2%;
+        height: 10vh;
+        font-family: "Montserrat", sans-serif;
+      }
+      .h2 {
+        display: grid;
+        grid-template-columns: 30% 90%;
+        gap: 2%;
+        height: 10vh;
+        font-family: "Montserrat", sans-serif;
+        
+      }
+      .h3 {
+        display: grid;
+        grid-template-columns: 30% 90%;
+        gap: 2%;
+        height: 10vh;
+        font-family: "Montserrat", sans-serif;
+      }
+      .h4 {
+        display: grid;
+        grid-template-columns: 30% 90%;
+        gap: 2%;
+        height: 10vh;
+        font-family: "Montserrat", sans-serif;
+      
+      }
+      .el3b1 {
+        
+        margin-right: 15%;
+        margin-top: 3%;
+      
+      }
+      .el3b2{
+        width: 70%;
+        height: 10vh;
+        padding: 3% 3%;
+        text-align: center;
+        background-color: rgb(60, 190, 238);
+        color: white;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.1rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        border-radius: 0.6rem;
+        position: absolute;
+        top:-1%;
+        right: 22.5%;
+
+        
+      }
+    .parent{
+      margin-top: 2%;
+      width: 86%;
+      height: 35vh;
+      display: flex;
+      gap: 3%;
+    
+    } 
+     .el3b3{
+      
+      flex-basis: 50%;
+      background-color:rgb(60, 190, 238);
+      border-radius: 0.7rem;
+     text-align: center;
+     padding: 5% 5%;
+     color: white;
+     font-family: "Montserrat", sans-serif; 
+    
+     }
+     .el3b4{
+      flex-basis: 50%;
+      background-color:black;
+      border-radius: 0.7rem;
+     text-align: center;
+     padding: 5% 5%;
+     color: white;
+     font-family: "Montserrat", sans-serif; 
+     }
+
+     .el4{
+      width: 100%;
+      height: 120vh;
+  
+      background-image: url(wonder.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 5%;
+      
+     }
+     .el41{
+      width: 50%;
+      text-align: center;
+     
+     
+     }
+     .el41 h2{
+      font-size: 1.3rem;
+      color: rgb(60, 190, 238);
+      padding: 1%;
+      font-family:  "Montserrat", sans-serif; 
+      font-weight: 500;
+    padding: 3%;
+      
+     }
+     .el41 h1{
+       color: white;
+       font-size: 2.5rem; 
+       font-weight: 900;
+       font-family:"Montserrat", sans-serif;  
+       padding: 1%;
+       margin-bottom: 3%;
+     }
+    .el41 p{
+      line-height: 1.5;
+      font-family: "Montserrat", sans-serif; 
+      color: white;
+      font-weight: 300;
+    }
+    .el42{
+      width: 60%;
+      height: 23vh;
+      border: 2px solid white;
+      background-color: white;
+      border-radius: 1rem;
+      margin-top: 3%;
+     
+    }
+    .el42a{
+      display: flex;
+      justify-content:space-between;
+      padding: 1% 1%;
+    
+    
+    }
+    .el42b{
+      display: flex;
+      justify-content:space-between;
+      padding: 1% 1%;
+    }
+    .el42c{
+      display: flex;
+      justify-content:space-between;
+      padding: 1% 1%;
+    }
+    .el43{
+      display: flex;
+      width: 100%;
+      height: 35vh;
+gap: 3%;
+justify-content: center;
+margin-top: -4%;
+
+    }
+    .el43a,.el43b,.el43c,.el43d{
+      flex-basis: 20%;
+      background-color: white;
+    gap: 6%;
+      justify-content: center;
+      border-radius: 1.2rem;
+    
+    }
+   .el4black{
+    width: 100%;
+    height: 120vh;
+    background-color:rgba(0, 0, 0, 0.7); 
+
+   }
+   .el5{
+  
+    width: 100%;
+    display:flex;
+   
+  
+ gap: 2%;
+ margin-top: 5%;
+   }
+     .el51,.el52,.el53{
+     
+      flex-basis: 27%;
+    border-radius: 1.3rem;
+     } 
+     .el51{
+      margin-left: 5%;
+     }
+     .el53{
+      height:80vh;
+     }
+     .el52{
+      background-color: black;
+      text-align: center;
+
+     }
+     .el52a{
+      margin-top: 10%;
+     }
+     .el52a p{
+      color: grey;
+      padding: auto;
+     }
+     .el52b{
+      width:80%;
+      height:100%;
+      
+      margin-left: 9%;
+     }
+     .el52b p{
+      color:grey;
+      line-height:3rem;
+      margin-top: 3%;
+   padding: 0% 5%;
+     }
+     .el53{
+      background-color: rgb(60, 190, 238);
+      text-align: center;
+     }
+     .el6{
+      margin-top: 5%;
+      height: 90vh;
+      width:100%;
+      background-image:url(candy.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+     }
+     .el6a{
+      height: 100%;
+      height: 81vh;
+      background-color:rgba(0, 0, 0, 0.5); 
+      overflow: hidden;
+     }
+     .el6b{
+      width: 50%;
+      height: 40vh;
+      font-family: "Montserrat", sans-serif; 
+      margin-left: 26%;
+      margin-top: 6%;
+     }
+     .el7{
+     
+      width:100%;
+     
+gap: 3%;
+     }
+     .el71{
+      margin-top: 3%;
+      display: grid;
+      grid-template-columns: 47% 20% 20%;
+      height: 55vh;
+      gap:2%;
+      margin-left: 8%;
+     
+     }
+     .el7a{
+      background-image: url(gallery-1.jpg);
+
+      background-size: 100% 100%;
+      border-radius: 1rem;
+     
+     }
+    
+     .el7b{
+      background-image: url(gallery-2.jpg);
+      background-repeat: 100% 100%;
+      border-radius: 1rem;
+     }
+     .el7c{
+      background-image: url(gallery-3.jpg);
+      background-size: 100% 100%;
+      border-radius: 1rem;
+     }
+     .el72{
+      margin-top: 3%;
+      display: grid;
+      grid-template-columns: 20% 20% 47%;
+      height: 55vh;
+      gap:2%;
+      margin-left: 8%;
+    
+     }
+     .el72a{
+      background-image: url(gallery-4.jpg);
+      background-size: 100% 100%;
+      border-radius: 1rem;
+      transition-property:all;
+      transition-duration: 2s;
+      transition-delay: 2s;
+      overflow: hidden;
+     }
+     .el72b{
+      background-image: url(gallery-5.jpg);
+      background-size: 100% 100%;
+      border-radius: 1rem;
+     }
+     .el72c{
+      background-image: url(gallery-6.jpg);
+      background-size: 100% 100%;
+      border-radius: 1rem;
+     }
+     .hi1 {
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 1rem;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(1);
+      transition: transform 0.8s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  }
+  
+  .el7a:hover .hi1 {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(0.8, 0.8);
+      overflow: hidden;
+  }
+  
+
+    .el7b:hover .hi1{
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: scale(0.8, 0.8);
+      overflow: hidden;
+
+    }
+    .el7c:hover .hi1{
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: scale(0.8, 0.8);
+      overflow: hidden;
+    }
+    .el72a:hover .hi1{
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: scale(0.8, 0.8);
+      overflow: hidden;
+    }
+    .el72b:hover .hi1{
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: scale(0.8, 0.8);
+      overflow: hidden;
+    }
+    .el72c:hover .hi1{
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: scale(0.8, 0.8);
+      overflow: hidden;
+    }
+    .waka{
+    
+      width: 50%;
+      height:40vh;
+      margin-left: 28%;
+      margin-top: 5%;
+    }
+    .waka h4{
+      text-align: center;
+      font-family: "Montserrat", sans-serif; 
+    }
+    .waka h4{
+      font-size: 1.8rem;
+      font-weight: 500;
+      color:rgb(60, 190, 238) ;
+    }
+    .waka h1{
+      font-size: 3.5rem;
+    }
+    .waka p{
+      color: grey;
+      line-height: 1.5;
+    }
+    .el8{
+     
+      width: 100%;
+     
+    }
+    .el8a{
+      height:30vh;
+      width: 50%;
+    
+      font-family:"Montserrat", sans-serif;  
+      margin-left: 27%;
+      margin-top: 4%;
+    }
+    .el8a h4{
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: rgb(60, 190, 238);
+    }
+    .el8a h1{
+      font-size: 3rem;
+      margin-top: 2%;
+      font-weight: 700;
+    }
+    .el8a p{
+      font-size: 1rem;
+      color: grey;
+      line-height: 1.5;
+      margin-top: 3%;
+    }
+    .el81{
+      width: 100%;
+      
+      display:grid;
+      grid-template-columns: 27% 27% 27%;
+      height: 80vh;
+     margin-left: 0%;
+    gap: 2%;
+    justify-content: center;
+    margin-top: 5%;
+    }
+    .el81a,.el81b,.el81c{
+      
+      border-radius: 1rem;
+    }
+   .el81a{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    margin-left: 0%;
+
+   font-family:"Montserrat", sans-serif;  
+background-repeat: no-repeat;
+
+
+   }
+   .el81b,.el81c{
+  background-color: whitesmoke;
+ font-family: "Montserrat", sans-serif;  
+   }
+   .e8black{
+    width: 100%;
+    height: 53%;
+    background-color: rgb(0, 0, 0,0.7);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+   }
+   .el81a h4{
+    font-size: 1.7rem;
+ 
+   font-weight: 500;
+   padding: 3% 6%;
+   }
+   .el81a p{
+    font-size: 1rem;
+    color: grey;
+    padding: 2% 3%;
+    line-height: 1.5;
+   }
+   .el81a button{
+   margin-left: 30%;
+   }
+   #blog1{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+   }
+   .el81b h4{
+    font-size: 1.7rem;
+ 
+   font-weight: 500;
+   padding: 3% 6%;
+   }
+   .el81b p{
+    font-size: 1rem;
+    color: grey;
+    padding: 2% 3%;
+    line-height: 1.5;
+   }
+   .el81b button{
+    margin-left: 30%;
+    }
+    #blog1{
+     border-top-left-radius: 1rem;
+     border-top-right-radius: 1rem;
+    }
+    .el81c h4{
+      font-size: 1.7rem;
+   
+     font-weight: 500;
+     padding: 3% 6%;
+     }
+     .el81c p{
+      font-size: 1rem;
+      color: grey;
+      padding: 2% 3%;
+      line-height: 1.5;
+     }
+     .el81c button{
+      margin-left: 30%;
+      }
+      #blog1{
+       border-top-left-radius: 1rem;
+       border-top-right-radius: 1rem;
+      }
+   .el9{
+    width: 100%;
+   
+ 
+ font-family: "Montserrat", sans-serif;  
+    
+   }
+   .el9a{
+    
+    width: 60%;
+    height: 40vh;
+   margin-left: 20%;
+   text-align: center;
+   margin-top: 3%;
+   }
+   .el9a h4{
+    font-size: 1.7rem;
+    padding: 3%;
+    font-weight: 400;
+    color:rgb(60, 190, 238) ;
+   }
+   .el9a h1{
+    font-size: 3.4rem;
+    font-weight: 700;
+    padding-bottom: 3%;
+   }
+   .el9a p{
+    color: grey;
+    line-height: 1.5;
+   }
+   .el9b{
+    width: 100%;
+   
+    display: flex;
+   
+    gap: 2%;
+    justify-content: center;
+    font-family:"Montserrat", sans-serif; 
+    margin-top: 4%;
+   }
+   .el9b1{
+    flex-basis: 27%;
+   
+    height: 50vh;
+    border-radius: 1.2rem;
+    
+   }
+   .el9b2{
+    flex-basis: 27%;
+   
+    height: 50vh;
+    border-radius: 1.2rem;
+
+   }
+   .el9b3{
+    flex-basis: 27%;
+   
+    height: 50vh;
+    border-radius: 1.2rem;
+
+   }
+   .child9{
+    width: 100%;
+    height:50%;
+   
+    display: flex;
+   }
+   .child91{
+    flex-basis: 60%;
+   
+   }
+   .child92{
+    flex-basis: 40%;
+   
+   }
+   .child91 h4{
+    font-size: 1.7rem;
+    padding: 5% 10%;
+    font-weight: 500;
+   
+  
+   }
+   
+   .child91 h5{
+    font-size: 1rem;
+    padding: 2% 10%;
+    font-weight: 300;
+    color: white;
+   }
+   #team1{
+    margin-left: 20%;
+   margin-top: 25%;
+   border-radius: 1rem;
+   }
+   .icons{
+    width: 50%;
+    height: 8vh;
+    background-color: white;
+    border-radius: 2rem;
+    margin-top: 6%;
+    margin-left: 25%;
+   }
+   #fb{
+    font-size: 2rem;
+    margin-left: 8%;
+    margin-top: 6%;
+    color: rgb(60, 190, 238);
+   }
+   #tw{
+    font-size: 2rem;
+    margin-left: 6%;
+    margin-top: 6%;
+    color: rgb(60, 190, 238);
+   }
+   #Lin{
+    font-size: 2rem;
+    margin-left: 8%;
+    margin-top: 6%;
+    color: rgb(60, 190, 238);
+   }
+   #insta{
+    font-size: 2rem;
+    margin-left: 9%;
+    margin-top: 6%;
+    color: rgb(60, 190, 238);
+   }
+   .el10{
+    width: 100%;
+height: 100vh;
+    background-image: url(vlog.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 5%;
+   }
+   .el10a{
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0,0.6);
+   }
+   .el10b{
+    width: 50%;
+    height: 35vh;
+  
+    margin-left: 24%;
+   }
+   .el10b h3{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: rgb(60, 190, 238);
+    text-align: center;
+    padding-top: 3%;
+   }
+   .el10b h1{
+    color: white;
+    font-size: 3rem;
+    padding-top: 2%;
+   }
+   .el10b p{
+    color: white;
+    padding-top: 3%;
+    line-height: 1.5;
+   }
+   .el10c{
+    background-color:rgba( 255, 255, 255, 0.2 );
+    width: 80%;
+    height: 40vh;
+    border-radius: 1rem;
+    margin-left: 10%;
+   
+   }
+   .el10c p{
+    padding-left: 4%;
+    padding-right:4%;
+    line-height:1.5;
+    color:white;
+    font-size: 1.2rem;
+    font-weight: 500;
+   }
+   
+   .child10a p{
+    border-radius: 50%;
+    background-color: white;
+    width: 50%;
+    height: 15vh;
+    background-image: url(team-1.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 20%;
+  
+
+    
+    
+   }
+
+  
+   .el10child{
+    width: 50%;
+    height: 30vh;
+  
+    display: flex;
+    position: relative;
+    margin-left: 24%;
+   }
+   .child10a{
+    flex-basis: 40%;
+   
+   }
+   .child10b{
+    flex-basis: 60%;
+   
+   }
+   #comment{
+    position: absolute;
+    top: 19%;
+    left: 7%;
+    text-align: center;
+  }
+  .child10a h2{
+    width:8% ;
+    height:20% ;
+    background-color: rgb(60, 190, 238);
+    border-radius: 50%;
+  }
+  .el11{
+    width: 100%;
+    
+    
+    display: grid;
+    grid-template-columns:27% 27% 27%;
+    gap:2%;
+    justify-content: center;
+    background-color: black;
+  }
+ .el11a,.el11b,.el11c{
+  margin-top: 5%;
+ }
+ .ellmain{
+  width: 100%;
+  height: 50vh;
+
+  display: flex;
+ }
+ .main1{
+  flex-basis: 50%;
+
+ }
+.main2{
+  flex-basis: 50%;
+
+}
+.el11c{
+  width: 100%;
+  height: 50vh;
+}
+
+.main3{
+  display: flex;
+  justify-content: space-between;
+}
+.el2black{
+  flex-basis: 50%;
+  padding: 2% 3%;
+   font-size: 1rem;
+   border-radius: 1rem;
+ min-height: 45vh;
+ background-color:rgb(0, 0, 0,0.5) ;
+
+}
+
+.bot{
+  margin-top: 25%;
+}
+.bot1{
+  margin-top: 59%;
+}
+.bot2{
+  margin-top: 59%;
+}
+.bot3{
+  margin-top: 50%;
+}
+.bot4{
+  margin-top: 50%;
+}
+.bot5{
+  margin-top: 25%;
+}
+@media (max-width:768px) {
+        
+  .el1{
+    flex-direction: column;
+ padding: 0% 0%;
+ min-height: 180vh;
+gap: 10%;
+    
+  }
+  .el1black{
+    display:flex ;
+    flex-direction: column;
+    gap: 0%;
+  }
+ 
+  .el1a{
+    padding: 0% 0%;
+    flex-basis: 30%;
+    height: auto;
+    gap: 10%;
+  }
+  .el1a h4{
+    font-size: 1.2rem;
+    width: 100vw;
+    padding: 8% 0%;
+    margin-left: 0%;
+      
+  }
+ .el1a h1{
+  font-size: 2rem;
+  padding: 0% 0%;
+ }
+ .el1a button{
+  width: 60%;
+  height: 9vh;
+  padding: 0% 0%;
+  margin-left: -5%;
+
+ }
+ .el1a p{
+  padding: 8% 0%;
+  line-height: 1.5;
+ }
+  .el1b{
+     flex-basis: 40%;
+     gap: 0%;
+     min-height: 65vh;
+     margin-top: 35%;
+  }
+  .el2{
+    flex-direction: column;
+  background-size:60vh;
+  margin-top: -100%;
+   
+  }
+  .el2a,.el2b,.el2c{
+   min-height: 45vh;
+    background-size:60vh;
+  }
+  .el3{
+    flex-direction: column;
+   margin-top: 92%;
+  }
+  .el3child {
+    margin-top:170%;
+    
+  }
+  .el3b{
+    margin-left: 10%;
+    margin-top: 30%;
+  }
+   .el3child #f2{
+    font-size: 1.9rem;
+  }
+  .el2a{
+    margin-top: 130%;
+  }
+  .el1{
+    height: 80vh;
+    background-size: cover;
+  }
+ .parent{
+  flex-direction: column;
+ }
+ .el4{
+  margin-top: 80%;
+  width: 100%;
+  min-height:205vh;
+ }
+ .el41{
+  width: 100%;
+ }
+ .el41 h4{
+  font-size: 1rem;
+  margin-top: 2%;
+ }
+ .el41 h1{
+  font-size: 1.4rem;
+  width: 100%;
+ }
+ .el41 p{
+line-height: 1.5;
+ }
+ .el42{
+  width: 100%;
+  margin-top: 5%;
+ }
+ .el43{
+ flex-direction: column;
+ margin-top: 95%;
+ gap: 5%;
+width: 80%;
+margin-left: 10%;
+
+ }
+ .el4black{
+  min-height:205vh;
+ }
+ .el5{
+  margin-top: 11%;
+  flex-direction: column;
+  gap: 5%;
+  width: 95%;
+  justify-content: center;
+ }
+ .el51{
+  height:50vh;
+  animation-delay: 1s;
+  transition-delay: 0.1s;
+  margin-left: 10%;
+ }
+ .el52{
+  margin-top: 20%;
+ min-height: 90vh;
+ margin-left: 7%;
+ }
+ .el53{
+  min-height:90vh;
+  margin-left: 7%;
+ }
+ .waka{
+  width: 100%;
+  margin-left: 10%;
+ }
+ .waka h1{
+  font-size: 2.6rem;
+text-align: center;
+ }
+  .el7{
+    width: 80%;
+  }
+  
+  .el71{
+    grid-template-columns:auto ;
+    min-height: 90vh;
+    width: 100%;
+    margin-top: 5%;
+    grid-template-rows:30vh 50vh 50vh;
+    margin-left: 13%;
+  
+  }
+ 
+
+
+.el72{
+margin-top:100%;
+grid-template-columns: auto;
+grid-template-rows: 50vh 50vh 30vh;
+width: 100%;
+gap: 3%;
+margin-left: 13%;
+}
+
+.el8{
+margin-top: 140%;
+}
+.el81{
+margin-top: 0%;
+grid-template-columns: auto;
+width: 80%;
+margin-left: 12%;
+gap: 5%;
+}
+.el9{
+margin-top: 280%;
+}
+.el9b{
+flex-direction: column;
+
+}
+.el11{
+grid-template-columns: auto;
+}
+.el8a{
+  margin-left: 5%;
+  width: 90%;
+}
+.el8a h1{
+  font-size: 2rem;
+  
+}
+.el9a{
+  width:80%;
+  margin-left: 10%;
+  margin-top: -20%;
+}
+.el9a h1{
+  font-size: 2rem;
+}
+.el9b{
+  width: 90%;
+  margin-left: 5%;
+ 
+}
+.el9b1,.el9b2,.el9b3{
+  min-height: 55vh;
+ 
+}
+.el9b2{
+  margin-top: 4%;
+}
+.el9b3{
+  margin-top: 4%;
+}
+.el10b{
+  width: 80%;
+  margin-left: 8%;
+}
+.el10b h1{
+ font-size: 2rem;
+}
+.el10c{
+  min-height: 60vh;
+}
+.el10child{
+  width: 100%;
+  height: 30vh;
+  margin-left: 4%;
+}
+.el10{
+  min-height: 80vh;
+}
+
+.nav-center{
+  display: none;
+}
+.nav-right i{
+  display: none;
+}
+#get-start{
+  display: none;
+}
+#menu {
+  display: block;
+
+ 
+}
+.bot{
+  min-width: 13vw;
+}
+.bot1{
+  min-width: -1vw;
+  height: 16vh;
+  margin-top: 40%;
+}
+.bot2{
+  min-width: 9%;
+  margin-top: 40%;
+}
+.bot3{
+  margin-top:40% ;
+}
+.bot4{
+  margin-top: 40%;
+}
+.bot5{
+  min-width: 14%;
+}
+}
+
+
+
+
+    </style>
+  </head>
+  <body>
+
+<header>
+  <nav>
+    <div class="nav-left">
+     
+       <h1><i id="swim" class="fa-solid fa-person-swimming" style="color:rgb(60, 190, 238)" ></i>  Waterland  </p> </h1> 
+      
+     
+    </div>
+    <div class="nav-center">
+    <a href="">Home</a><a href="">About</a><a href="">Services</a><a href="">contact</a>
+    </div>
+    <div class="nav-right">
+      <i class="fa-brands fa-instagram" style="color:rgb(60, 190, 238)"></i>
+      <i class="fa-brands fa-twitter" style="margin-left: 4%; color:rgb(60, 190, 238)"></i>
+      <i class="fa-brands fa-facebook" style="margin-left: 4%; color:rgb(60, 190, 238)"></i>
+      <i class="fa-brands fa-linkedin" style="margin-left: 4%;color:rgb(60, 190, 238)"></i>
+    
+      <p id="get-start" style="margin-left: 5%; margin-top:-5%" width="40%"  > getstarted</p>
+    </div>
+  </nav>
+</header>
+
+    <section>
+
+
+    
+    <section> 
+     
+       <div class="el1">
+        <!-- el1 starts -->
+        <!-- el1a starts-->
+         <div class="el1black">
+        <div class="el1a" data-aos="fade-right" data-aos-duration="1000">
+          <h4 class="a" style="color: rgb(60, 190, 238)">
+            WELCOME TO WATERLAND
+          </h4>
+          <h1 class="b" style="color: white">
+            THE BIGGEST THEME & <br />
+            AMUSEMENT PARK
+          </h1>
+          <p class="c">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            temporibus amet consectetur adipisicing eveniet corporis corrupti consectetur etc....
+            
+          </p>
+          <button class="k">Our Packages</button>
+        </div>
+        <!-- el1a ends -->
+        <div class="el1b" data-aos="fade-left" data-aos-duration="1000"> 
+          <!-- el1b starts -->
+          <h2 style="text-align: center; padding: 3% 3%; margin-top: 3% ;font-weight:500;" >
+            BOOK YOUR TICKET
+          </h2>
+          <form action="">
+            <!-- form starts  -->
+             <div class="a1">
+              <input type="text" placeholder="Your Name" id="a1" />
+            </div>
+            <div>
+              <input type="email" name="" id="a2" placeholder="Email" />
+              <span
+                ><input type="phone" name="" id="a3" placeholder="phone"
+              /></span>
+            </div>
+            <div>
+              <label for="choices"></label>
+              <select id="choices" name="choices" class="hello">
+                <option value="" selected>--Select Packages--</option>
+                <option value="option1">Family Packages</option>
+                <option value="option2">Basic Packages</option>
+                <option value="option3">Premium Packages</option>
+              </select>
+            </div>
+
+            <div class="a1">
+              <input type="date" placeholder="dd-mm-yyyy" id="a1" />
+            </div>
+            <div class="a1">
+              <input type="number" placeholder="Guest" id="a1" />
+            </div>
+            <div>
+              <input type="button" value="Book Now" class="a6" />
+            </div>
+          </form> 
+          <!-- forms end -->
+         </div>
+        <!-- el1b ends -->
+      </div>
+       </div> 
+     
+    </section> 
+    <!-- section 1 ends -->
+    <section> 
+      <!-- section2 starts -->
+      <div class="el2">
+        <!-- el2 starts -->
+        
+      
+         <div class="el2a" data-aos="fade-up"
+         data-aos-duration="1000" > <div class="el2black" >
+           
+          <h3 style="font-size: 1.4rem">Best Pools</h3>
+          <p style="margin-top: 3%; line-height: 1.3">
+            Lorem ipsum dolor sit amet consectetur<br />
+            adipisicing elit. Perferendis porro soluta <br />voluptatum laborum
+            mollitia blanditiis suscipit,
+          </p>
+          <button class="R">
+            Read More
+            <i
+              class="fa-solid fa-arrow-right"
+              style="margin-left: 4%; font-size: 1.2rem"
+            ></i>
+          </button>
+      
+
+        </div>
+      </div>
+   
+        <div class="el2b" data-aos="fade-up"
+        data-aos-duration="1000"><div class="el2black" >
+          <h3 style="font-size: 1.4rem">Waterslides</h3>
+          <p style="margin-top: 3%; line-height: 1.3">
+            Lorem ipsum dolor sit amet consectetur<br />
+            adipisicing elit. Perferendis porro soluta <br />voluptatum laborum
+            mollitia blanditiis suscipit,
+          </p>
+          <button class="R">
+            Read More
+            <i
+              class="fa-solid fa-arrow-right"
+              style="margin-left: 4%; font-size: 1.2rem"
+            ></i>
+          </button>
+        </div>
+        </div>
+        <div class="el2c" data-aos="fade-up"
+        data-aos-duration="1000" ><div class="el2black" >
+          <h3 style="font-size: 1.4rem">River Rides</h3>
+          <p style="margin-top: 3%; line-height: 1.3">
+            Lorem ipsum dolor sit amet consectetur<br />
+            adipisicing elit. Perferendis porro soluta <br />voluptatum laborum
+            mollitia blanditiis suscipit,
+          </p>
+          <button class="R">
+            Read More
+            <i
+              class="fa-solid fa-arrow-right"
+              style="margin-left: 4%; font-size: 1.2rem"
+            ></i>
+          </button>
+        </div>
+        </div>
+
+        <!-- el2 ends -->
+      </div>
+    
+      <!-- section 2 ends -->
+    </section>
+
+    <section>
+      <!-- section 3 starts -->
+      <div class="el3">
+        <!-- el3 starts -->
+        <div class="el3a">
+          <div class="el3child">
+            <h2 style="color: rgb(60, 190, 238)" id="f1">About Waterland</h2>
+            <h1 id="f2">The Best Theme & Amusement Park For Your Family</h1>
+            <p style="line-height: 1.5" id="f3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+              eligendi illum inventore maiores incidunt vero id. Est ipsam,
+              distinctio veritatis earum inventore ab fugit officiis ut ullam,
+              laudantium facere sapiente?
+            </p>
+          </div>
+          <div class="el3a1">
+            <div class="h1">
+              <div class="z1">
+                <i
+                  class="fa-solid fa-champagne-glasses"
+                  style="font-size: 3.2rem; color: rgb(60, 190, 238)"
+                ></i>
+              </div>
+              <div class="z2" style="padding: 3% 3%">
+                <h1 style="font-weight: 500">Food & Drinks</h1>
+                <p style="color: grey; line-height: 1.5">
+                  Lorem ipsum dolor sit amet<br />
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="h2">
+              <div class="y1">
+                <i
+                  class="fas fa-dot-circle fa-3x text-primary"
+                  style="font-size: 3.2rem; color: rgb(60, 190, 238)"
+                ></i>
+              </div>
+              <div class="y2" style="padding: 3% 3%">
+                <h1 style="font-weight: 500">Many Attractions</h1>
+                <p style="color: grey; line-height: 1.5">
+                  Lorem ipsum dolor sit amet<br />
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="h3">
+              <div class="x1">
+                <i
+                  class="fas fa-hand-holding-usd fa-3x text-primary"
+                  style="font-size: 3.2rem; color: rgb(60, 190, 238) "
+                ></i>
+              </div>
+
+              <div class="x2" style="padding: 3% 3%">
+                <h1 style="font-weight: 500">Affordable Price</h1>
+                <p style="color: grey; line-height: 1.5">
+                  Lorem ipsum dolor sit amet<br />
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="h4">
+              <div class="b1">
+                <i
+                  class="fas fa-lock fa-3x text-primary"
+                  style="font-size: 3.2rem; color: rgb(60, 190, 238)"
+                ></i>
+              </div>
+              <div class="b2" style="padding: 3% 3%">
+                <h1 style="font-weight: 500">Safety Lockers</h1>
+                <p style="color: grey; line-height: 1.5">
+                  Lorem ipsum dolor sit amet<br />
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <!-- el3a1 ends -->
+          </div>
+        <!-- el3a ends -->
+        </div>
+        <div class="el3b">
+          <!-- el3b starts -->
+          <div class="el3b1">
+            <img
+              src="about.jpg"
+              alt=""
+              width="100%"
+              style="border-radius: 0.5rem"
+            />
+          </div>
+
+          <div class="el3b2">
+            <h1>20 Years Experience</h1>
+        
+          </div>
+          <div class="parent">
+            <!-- parent starts -->
+           <div class="el3b3">
+            <i class="fas fa-thumbs-up fa-3x text-white"></i>
+            <h2 style="margin-top: 15%; font-size:2.5rem;">150 K  + </h2>
+            <h3 style="margin-top: 20%; font-weight:500; font-size:1.3rem;">Happy Visitors</h3>
+           </div>
+           <div class="el3b4">
+            <i class="fas fa-certificate fa-3x text-white"></i>
+            <h2 style="margin-top: 15%; font-size:2.5rem;">122  + </h2>
+            <h3 style="margin-top: 20%; font-weight:500; font-size:1.3rem;">Anwards Winning</h3>
+           </div>
+           <!-- parent ends -->
+          </div>
+          <!-- el3b ends -->
+        </div>
+       
+        <!-- el3 ends -->
+      </div>
+
+      <!-- section 3 ends -->
+    </section>
+<section>
+  <!-- section 4 starts -->
+
+<div class="el4">
+  <!-- el4 starts -->
+   <div class="el4black">
+   <center>
+<div class="el41" >
+    <h2>OUR SERVICES</h2>
+    <h1>Explore Waterland Park service</h1>
+   
+   
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.</p>
+</div>
+
+</center>
+<center><div class="el42" >
+  <hr style="margin-top: 3%;">
+ <div class="el42a"> 
+<h1 style="font-weight: 500;">Monday - Friday</h1>
+<p style="color: grey;"><i class="fas fa-clock text-primary me-2" style="color:rgb(60, 190, 238);"></i>11:00 AM - 16:00
+  PM</p>
+ </div>
+ <hr>
+  <div class="el42b"> 
+ <h1 style="font-weight: 500;">Saturday - sunday</h1>
+ <p style="color: grey;"><i class="fas fa-clock text-primary me-2" style="color: rgb(60, 190, 238);"></i>09:00 AM - 17:00
+   PM</p>
+  </div>
+  <hr>
+ <div class="el42c"> 
+<h1 style="font-weight: 500;">Holiday</h1>
+<p style="color: grey;"><i class="fas fa-clock text-primary me-2" style="color: rgb(60, 190, 238);"></i>09:00 AM - 17:00
+  PM</p>
+ 
+
+</div>
+<!-- el42 ends -->
+</div></center>
+<div class="el43"  >
+<!-- el43 starts -->
+<div class="el43a" >
+  <div class="home" >
+   <p style="text-align:center; margin-top:5%;"> <i class="fas fa-home fa-4x" style="color: rgb(60, 190, 238);  "></i></p>
+    <p style="text-align: center; font-size:1.9rem; margin-top:8%;">Private Gazebo</p>
+    <p style="text-align: center; color:grey;font-size:1.1rem; margin-top:10%">  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+      vel beatae numquam.</p>
+  </div>
+  <!-- home ends -->
+</div>
+<!-- el3a ends -->
+<div class="el43b">
+  <div class="home">
+    <p style="text-align:center; margin-top:5%;"> <i class="fas fa-utensils fa-4x" style="color: rgb(60, 190, 238);  "></i></p>
+     <p style="text-align: center; font-size:1.9rem; margin-top:8%;">Delicious Food</p>
+     <p style="text-align: center; color:grey;font-size:1.1rem; margin-top:10%">  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+       vel beatae numquam.</p>
+   </div>
+  <!-- el43b ends -->
+</div>
+<div class="el43c">
+
+  <div class="home">
+    <p style="text-align:center; margin-top:5%;"> <i class="fas fa-door-closed fa-4x" style="color: rgb(60, 190, 238);  "></i></p>
+     <p style="text-align: center; font-size:1.9rem; margin-top:8%;">Safety Lockers</p>
+     <p style="text-align: center; color:grey;font-size:1.1rem; margin-top:10%">  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+       vel beatae numquam.</p>
+   </div>
+  <!-- el43c ends -->
+</div>
+<div class="el43d">
+  <div class="home">
+    <p style="text-align:center; margin-top:5%;"> <i class="fas fa-swimming-pool fa-4x" style="color: rgb(60, 190, 238);  "></i></p>
+     <p style="text-align: center; font-size:1.9rem; margin-top:8%;">River Rides</p>
+     <p style="text-align: center; color:grey;font-size:1.1rem; margin-top:10%">  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+       vel beatae numquam.</p>
+   </div>
+  <!-- el43d ends -->
+</div>
+
+
+
+
+
+
+<!-- el43ends -->
+</div>
+   
+</div>
+
+  <!-- el4 ends -->
+</div>
+<!-- section 4 ends -->
+</section>
+<section>
+  <!-- section 5 starts -->
+<div class="el5">
+  <!-- el5 starts -->
+ <div class="el51"> 
+  <h4 style="color:rgb(60, 190, 238); font-weight:500 ;font-size:1.9rem ;padding:3% 5%">Ticket Packages</h4>
+  <h1 style=" font-weight:900 ;font-size:3.4rem ;padding:3% 5%">Choose The Best Packages For Your Family</h1>
+  <p style="color:grey; font-weight:500 ;font-size:1rem ;padding:3% 5% ;line-height:1.2;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.</p>
+<p><i class="fa fa-check text-primary me-2" style="color:rgb(60, 190, 238);padding:0%  6%  "></i> <span style=" color:grey; line-height:1.5">Best Waterpark in the world      </span> </p>
+<p><i class="fa fa-check text-primary me-2" style="color:rgb(60, 190, 238);padding: 0% 6% "></i> <span style=" color:grey; line-height:1.5">Best Packages For Your Family    </span> </p>
+<p><i class="fa fa-check text-primary me-2" style="color:rgb(60, 190, 238);padding: 0% 6%"></i> <span style=" color:grey; line-height:1.5">Enjoy Various Kinds of Water Park</span> </p>
+<p><i class="fa fa-check text-primary me-2" style="color:rgb(60, 190, 238);padding: 0% 6%"></i> <span style=" color:grey; line-height:1.5">Win Up To 3 Free All Day Tickets </span> </p>
+<button class="R" style="padding:2% 3% ;width:40% ;height:7vh; margin-left:4%; margin-top:3%;">
+  Book Now
+ 
+</button>
+
+</div>
+<div class="el52" >
+  <div class="el52a">
+  <h2 style="color:rgb(60, 190, 238); font-weight:500 ;font-size:2.2rem ;">Family Packages</h2>
+  <p style="margin-top: 5%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolorum!</p>
+  <p style="padding: 5%; font-size:1.3rem"><span style="font-size:2rem ;color:rgb(60, 190, 238);">$260,90</span>/family</p></div>
+  <div class="el52b">
+    <hr>
+    <p><i class="fa fa-check text-primary me-2" style="color:rgb(60, 190, 238);"></i> <span style="margin-left:3%;">All Access To Waterpark</span></p>
+    <p><i class="fa fa-check text-primary me-2" style="color:rgb(60, 190, 238);"></i> <span style="margin-left:3%;">Get Two Gazebo         </span></p>
+    <p><i class="fa fa-check text-primary me-2" style="color:rgb(60, 190, 238);"></i> <span style="margin-left:3%;">Free Soft Drinks       </span></p>
+    <p><i class="fa fa-check text-primary me-2" style="color:rgb(60, 190, 238);"></i> <span style="margin-left:3%;">Get Four Lockers       </span></p>
+    <p><i class="fa fa-check text-primary me-2" style="color:rgb(60, 190, 238);"></i> <span style="margin-left:3%;">Free Four Towels       </span></p>
+    <button class="R" style="padding:2% 3% ;width:40% ;height:7vh; margin-left:4%; margin-top:3%;">
+      Book Now
+     
+    </button>
+  </div>
+</div>
+<div class="el53" style="margin-top:3%;">
+  <div class="el52a">
+    <h2 style="color:rgb(0, 0, 0); font-weight:500 ;font-size:2.2rem ;">Basic Packages</h2>
+    <p style="margin-top: 5%; color:white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolorum!</p>
+    <p style="padding: 5%; font-size:1.3rem; color:white;"><span style="font-size:1.8rem ;color:black;">$60,90</span>/family</p></div>
+    <div class="el52b">
+      <hr>
+  
+      <p style="color:white"><i class="fa fa-check text-primary me-2" style="color:black"></i><span style="margin-left:3%">Get Two Gazebo   </span></p>
+      <p style="color:white"><i class="fa fa-check text-primary me-2" style="color:black"></i><span style="margin-left:3%">Free Soft Drinks </span></p>
+      <p style="color:white"><i class="fa fa-check text-primary me-2" style="color:black"></i><span style="margin-left:3%">Get Four Lockers </span></p>
+      <p style="color:white"><i class="fa fa-check text-primary me-2" style="color:black"></i><span style="margin-left:3%">Free Four Towels </span></p>
+      <button class="R" style="padding:2% 3% ;width:40% ;height:7vh; margin-left:4%; margin-top:3; background-color:black;">
+        Book Now
+       
+      </button>
+    </div>
+</div>
+
+
+
+
+
+<!-- el5 ends -->
+</div>
+
+
+<!-- section 5 ends -->
+</section>
+
+
+
+
+
+
+
+
+<!-- section 7 starts -->
+  <div class="el7">
+  <div class="waka"  >
+    <h4>Our Gallery</h4>
+    <h1 style="text-align: center;">Captured Moments In Waterland</h1>
+    <p style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.</p>
+      </div>
+<div class="el71" >
+ 
+ <div class="el7a" >
+  <div class="hi1" style="width:100% ;height:100%;" >
+    <center>  <button style="width:8% ;height:7vh; background-color:white; border-radius:50% ; " class="bot"><i class="fa-brands fa-searchengin" style="font-size:1rem ;color:rgb(60, 190, 238)"></i></button></center>
+  </div>
+ </div>
+ <div class="el7b" ><div class="hi1" style="width:100% ;height:100%;" >
+  <center>  <button style="width:17% ;height:7vh; background-color:white; border-radius:50% ; " class="bot1"><i class="fa-brands fa-searchengin" style="font-size:1rem;color:rgb(60, 190, 238)"></i></button></center>
+</div></div>
+ <div class="el7c" ><div class="hi1" style="width:100% ;height:100%;" >
+  <center>  <button style="width:17% ;height:7vh; background-color:white; border-radius:50% ; " class="bot2"><i class="fa-brands fa-searchengin" style="font-size:1rem;color:rgb(60, 190, 238)"></i></button></center>
+</div></div>
+</div>
+<!-- el71 ends -->
+  <div class="el72" >
+  <div class="el72a" >
+    <div class="hi1" style="width:100% ;height:100%;" >
+      <center>  <button style="width:17% ;height:7vh; background-color:white; border-radius:50% ; " class="bot3"><i class="fa-brands fa-searchengin" style="font-size:1rem;color:rgb(60, 190, 238)"></i></button></center>
+    </div>
+  </div>
+  <div class="el72b" >
+    <div class="hi1" style="width:100% ;height:100%;" >
+      <center>  <button style="width:17% ;height:7vh; background-color:white; border-radius:50% ; " class="bot4"><i class="fa-brands fa-searchengin" style="font-size:1rem;color:rgb(60, 190, 238)"></i></button></center>
+    </div>
+  </div>
+  <div class="el72c" >
+    <div class="hi1" style="width:100% ;height:100%;" >
+      <center>  <button style="width:8%;height:7vh; background-color:white; border-radius:50% ;" class="bot5"><i class="fa-brands fa-searchengin" style="font-size:1rem;color:rgb(60, 190, 238)"></i></button></center>
+    </div>
+  </div>
+
+ </div> 
+
+
+
+
+  <!-- el7 ends -->
+ </div>
+
+<!-- section 7 ends -->
+</section>
+<section>
+  <!-- section 8 starts -->
+ <div class="el8">
+<div class="el8a">
+<h4 >Our Blog</h4>
+<h1   style="text-align: center;">Latest Blog & Articles</h1>
+<p   style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.</p>
+</div> 
+<!-- el8a ends -->
+ <div class="el81">
+   <div class="el81a"  >
+    <img src="blog-1.jpg" alt="" width="100%" height="50%" id="blog1">
+
+ <h4>Why Children Dont Like Getting Out Of The Water</h4>
+ <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam aspernatur nam quidem porro sapiente, neque a quibusdam....</p>
+ <button class="R">
+  Read More
+  <i
+    class="fa-solid fa-arrow-right"
+    style="margin-left: 4%; font-size: 1.2rem"
+  ></i>
+</button>
+
+</div>
+
+
+   <div  class="el81b"  >
+    <img src="blog-3.jpg" alt="" width="100%" height="50%" id="blog1">
+
+    <h4>5 Ways To Enjoy Waterland This Spring Break</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam aspernatur nam quidem porro sapiente, neque a quibusdam....</p>
+    <button class="R">
+     Read More
+     <i
+       class="fa-solid fa-arrow-right"
+       style="margin-left: 4%; font-size: 1.2rem"
+     ></i>
+   </button>
+   </div>
+   <div class="el81c"  >
+    <img src="blog-2.jpg" alt="" width="100%" height="50%" id="blog1">
+
+    <h4>3 Tips for Your Family Spring Break at Amusement Park</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam aspernatur nam quidem porro sapiente, neque a quibusdam....</p>
+    <button class="R">
+     Read More
+     <i
+       class="fa-solid fa-arrow-right"
+       style="margin-left: 4%; font-size: 1.2rem"
+     ></i>
+   </button>
+   </div>
+ </div>
+ </div>
+ <section>
+  <!-- section 9 starts -->
+<div class="el9">
+  <!-- el9 starts -->
+   <div class="el9a" >
+    <!-- el9a starts -->
+     
+   <h4>Meet Our Team</h4>
+   <h1>Our Waterland Park Dedicated Team Member</h1>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.</p>
+ 
+
+  
+
+<!-- el9a ends -->
+   </div>
+
+   <div class="el9b"  >
+    <div class="el9b1" style="background-color:rgb(60, 190, 238)  ;">
+      <div class="child9">
+      <div class="child91">
+        <h4>David James</h4>
+        <h5>Profession</h5>
+        
+      </div>
+      <div class="child92" >
+        <img src="team-1.jpg" alt="" width="70%" height="70%" id="team1">
+      </div>
+    </div>
+    <hr>
+    <h6 class="icons"><i class="fa-brands fa-facebook" id="fb"></i> <i class="fa-brands fa-square-twitter" id="tw">  </i><i class="fa-brands fa-linkedin" id="Lin"></i> <i class="fa-brands fa-square-instagram" id="insta"></i></h6>
+    <p style="color: white; padding-top:5%;text-align:center">ipsum dolor sit amet consectetur adipisicing elit. Autem, quibusdam eveniet itaque provident sequi deserunt.</p>
+    </div>
+    <div class="el9b2" style="background-color: rgb(60, 190, 238)  ;">
+      <div class="child9">
+        <div class="child91">
+          <h4>Michael John</h4>
+          <h5>Profession</h5>
+          
+        </div>
+        <div class="child92" >
+          <img src="team-2.jpg" alt="" width="70%" height="70%" id="team1">
+        </div>
+      </div>
+      <hr>
+      <h6 class="icons"><i class="fa-brands fa-facebook" id="fb"></i> <i class="fa-brands fa-square-twitter" id="tw">  </i><i class="fa-brands fa-linkedin" id="Lin"></i> <i class="fa-brands fa-square-instagram" id="insta"></i></h6>
+      <p style="color: white; padding-top:5%;text-align:center">ipsum dolor sit amet consectetur adipisicing elit. Autem, quibusdam eveniet itaque provident sequi deserunt.</p>
+    </div>
+   
+    <div class="el9b3" style="background-color: rgb(60, 190, 238)  ;;" >
+      <div class="child9">
+        <div class="child91">
+          <h4>William John</h4>
+          <h5>Profession</h5>
+          
+        </div>
+        <div class="child92">
+          <img src="team-3.jpg" alt="" width="70%" height="70%" id="team1">
+        </div>
+      </div>
+      <hr>
+      <h6 class="icons"><i class="fa-brands fa-facebook" id="fb"></i> <i class="fa-brands fa-square-twitter" id="tw">  </i><i class="fa-brands fa-linkedin" id="Lin"></i> <i class="fa-brands fa-square-instagram" id="insta"></i></h6>
+      <p style="color: white; padding-top:5%;text-align:center">ipsum dolor sit amet consectetur adipisicing elit. Autem, quibusdam eveniet itaque provident sequi deserunt.</p>
+    </div>
+
+ </div> 
+  <!-- el9 ends -->
+</div>
+
+  <!-- section 9 ends -->
+ </section>
+ <section>
+  <!-- section 10 starts -->
+<div class="el10">
+<!-- el10 starts -->
+<div class="el10a" >
+<div class="el10b">
+  <!-- el10b starts -->
+  <h3>Testimonials</h3>
+  <h1 style="text-align: center;">Our Clients Reviews</h1>
+  <p style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.</p>
+</div>
+<!-- el10b ends -->
+<div class="el10c" >
+<p style="text-align:center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.</p>
+<div class="el10child">
+<div class="child10a">
+<p></p>
+<h2 id="comment"><i class="fa fa-quote-right fa-2x"  style="color:white ;font-size:2rem;"></i></h2>
+
+</div>
+<div class="child10b">
+ <h4 style="font-size:1.4rem; text-align:center; margin-top:15%;margin-left:-40% ;color:rgb(60, 190, 238);">Gogikar_Rahul</h4>
+ <p style="padding-top: 3%; font-size:1rem;margin-left:-40%;text-align:center">Amazon Developer</p>
+ <p style="color:rgb(60, 190, 238); padding-top:3%;margin-left:-40%;text-align:center;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+</div>
+
+</div>
+<!-- el10child ends -->
+
+</div>
+<!--el10c ends--> 
+
+
+
+
+
+<!-- el10a ends -->
+</div>
+
+
+
+
+
+<!-- el10 ends -->
+</div>
+
+
+
+
+  <!-- section 10 ends -->
+ </section>
+ <section>
+  <!-- section 11 starts -->
+<div class="el11">
+  <!-- el11 starts -->
+<div class="el11a">
+  
+  <h4 style="font-size:2rem; color:white; font-weight:400"><i class="fas fa-swimmer text-primary me-3" style="color: rgb(60, 190, 238); font-size:2rem;padding:5% 7%;"></i> Waterland</h4>
+  <p style="padding:3% 7%;line-height:1.5;text-align:justify;color:grey">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+  <h2><span ><i class="fas fa-map-marker-alt text-primary me-3" style="color:rgb(60, 190, 238);padding:9% 7%; margin-top:50%;"></i></span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15221.25187028858!2d78.38278298715818!3d17.49256740000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91936d056e29%3A0x2a05a43f22c3367c!2sTitan%20Eye%2B%20at%20Kukatpally%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1739964548613!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </h2>
+ <h6 style="color:white;"><span style="font-size: 1rem;font-weight:400;"><i class="fas fa-envelope text-primary me-3" style="color:rgb(60, 190, 238);font-size:1rem;padding:2% 7%"></i> rahul.gogikar04@gmail.com</span></h6>
+ 
+ <h6 style="color: white;font-weight:400;font-size:1rem"><i class="fa fa-phone-alt text-primary me-3" style="color: rgb(60, 190, 238);font-size:1rem;padding:3% 7%"></i>(+91)9502514094</h6>
+
+</div>
+<div class="el11b">
+  <div class="ellmain">
+    
+     <div class="main1">
+     
+      <h2 style="color: white;padding:8% 3%;padding-bottom:4%;font-weight:400;font-size:2rem">Quick Links</h2>
+      <div style="margin-top: 13%;">
+      <h4 style="color: grey;"> ><span style="padding:10% 8% ;font-size:1.2rem;font-weight:400;margin-top:5%"> About Us    </span></h4>      <br>
+      <h4 style="color: grey;"> ><span style="padding:4% 8% ;font-size:1.2rem;font-weight:400"> Feature     </span></h4><br>
+      <h4 style="color: grey;"> ><span style="padding:4% 8% ;font-size:1.2rem;font-weight:400"> Attractions </span> </h4><br>
+      <h4 style="color: grey;"> ><span style="padding:4% 8% ;font-size:1.2rem;font-weight:400"> Tickets     </span>  </h4><br>
+      <h4 style="color: grey;"> ><span style="padding:4% 8% ;font-size:1.2rem;font-weight:400"> Blog        </span>  </h4><br>
+      <h4 style="color: grey;"> ><span style="padding:4% 8% ;font-size:1.2rem;font-weight:400"> Contact US  </span>   </h4><br>
+    </div>
+    </div>
+     <div class="main2">
+      <h2 style="color: white;padding:8% 3%;padding-bottom:4%;font-weight:400;font-size:2rem;">Support</h2>
+      <div style="margin-top: 13%;">
+       <h4 style="color: grey;"> ><span style="padding:4% 8% ;font-size:1.2rem;font-weight:400"> Privacy policy    </span></h4>      <br>
+      <h4 style="color: grey;"> ><span style="padding:4% 8% ;font-size:1.2rem;font-weight:400"> Terms&Conditions     </span></h4><br>
+      <h4 style="color: grey;"> ><span style="padding:4% 8% ;font-size:1.2rem;font-weight:400"> Disclaimer </span> </h4><br>
+      <h4 style="color: grey;"> ><span style="padding:4% 8% ;font-size:1.2rem;font-weight:400"> Support    </span>  </h4><br>
+      <h4 style="color: grey;"> ><span style="padding:4% 8% ;font-size:1.2rem;font-weight:400"> FAQ      </span>  </h4><br>
+      <h4 style="color: grey;"> ><span style="padding:4% 8% ;font-size:1.2rem;font-weight:400"> Help  </span>   </h4><br> 
+    </div>
+    </div>
+  </div>
+</div>
+<div class="el11c">
+  <h2 style="color: white;padding:6% 0%;font-weight:400;font-size:2rem">Opening Hours</h2>
+<div class="main3">
+  
+<h2 style="color: white; font-size:1.2rem;font-weight:400;">Monday-Friday:</h2>
+<h5 style="color: grey;"><i class="fas fa-clock text-primary me-2" style="color: rgb(60, 190, 238);"></i>11:00 AM - 16:00 PM</h5>
+</div><br>
+<div class="main3">
+  <h2 style="color: white; font-size:1.2rem;font-weight:400;">Saturday-Sunday:</h2>
+  <h5 style="color: grey;"><i class="fas fa-clock text-primary me-2" style="color: rgb(60, 190, 238);"></i>11:00 AM - 16:00 PM</h5>
+  </div><br>
+  <div class="main3">
+    <h2 style="color: white; font-size:1.2rem;font-weight:400;">Holiday:</h2>
+    <h5 style="color: grey;"><i class="fas fa-clock text-primary me-2" style="color: rgb(60, 190, 238);"></i>11:00 AM - 16:00 PM</h5>
+  
+  </div><br>
+<hr style="font-weight: 200;"><br>
+<h2 style="color: white; font-size:1.2rem;font-weight:400;">Payment Accepted</h2><br>
+<div><img src="payment.png" alt=""></div>
+</div>
+
+
+
+
+<!-- el11 ends -->
+</div>
+
+  <!-- section 11 starts -->
+ </section>
+<script>
+  AOS.init();
+</script>
+
+  </body>
+</html>
