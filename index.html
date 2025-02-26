@@ -1163,6 +1163,9 @@ height: 100vh;
 .bot5{
   margin-top: 25%;
 }
+.R:hover{
+background-color: black;
+}
 @media (max-width:1280px) {
   .el2black{
     min-height: 100%;
@@ -1170,7 +1173,7 @@ height: 100vh;
 }
 @media (max-width:768px) {
   .el2black{
-    min-height: 90vh;
+    min-height: 45vh;
   }
         
   .el1{
@@ -1178,19 +1181,26 @@ height: 100vh;
  padding: 0% 0%;
  min-height: 180vh;
 gap: 10%;
+
     
   }
   .el1black{
     display:flex ;
     flex-direction: column;
     gap: 0%;
+    flex-basis: 30%;
+   overflow: hidden;
+    
+  
+   
   }
  
   .el1a{
     padding: 0% 0%;
-    flex-basis: 40%;
+    flex-basis: 30%;
     height: auto;
     gap:2%;
+    width: 100%;
   }
   .el1a h4{
     font-size: 1.2rem;
@@ -1232,10 +1242,10 @@ gap: 10%;
   }
   .el3{
     flex-direction: column;
-   margin-top: 92%;
+   margin-top: 98%;
   }
   .el3child {
-    margin-top:170%;
+    margin-top:200%;
     
   }
   .el3b{
@@ -1280,8 +1290,8 @@ line-height: 1.5;
  }
  .el43{
  flex-direction: column;
- margin-top: 95%;
- gap: 5%;
+ margin-top: 110%;
+ gap: 10%;
 width: 80%;
 margin-left: 10%;
 
@@ -1327,7 +1337,7 @@ text-align: center;
     grid-template-columns:auto ;
     min-height: 90vh;
     width: 100%;
-    margin-top: 5%;
+    margin-top: 25%;
     grid-template-rows:30vh 50vh 50vh;
     margin-left: 13%;
   
@@ -1336,7 +1346,7 @@ text-align: center;
 
 
 .el72{
-margin-top:100%;
+margin-top:125%;
 grid-template-columns: auto;
 grid-template-rows: 50vh 50vh 30vh;
 width: 100%;
@@ -1345,17 +1355,27 @@ margin-left: 13%;
 }
 
 .el8{
-margin-top: 140%;
+margin-top: 170%;
 }
 .el81{
-margin-top: 0%;
+margin-top: 25%;
 grid-template-columns: auto;
 width: 80%;
 margin-left: 12%;
 gap: 5%;
+
+}
+.el81a{
+  min-height: 85vh;
+}
+.el81b{
+  min-height: 85vh;
+}
+.el81c{
+  min-height: 85vh;
 }
 .el9{
-margin-top: 280%;
+margin-top: 420%;
 }
 .el9b{
 flex-direction: column;
@@ -1381,8 +1401,9 @@ grid-template-columns: auto;
   font-size: 2rem;
 }
 .el9b{
-  width: 90%;
-  margin-left: 5%;
+  width: 99%;
+  margin-left: 1%;
+  margin-top: 20%;
  
 }
 .el9b1,.el9b2,.el9b3{
@@ -1403,8 +1424,14 @@ grid-template-columns: auto;
  font-size: 2rem;
 }
 .el10c{
-  min-height: 60vh;
+  min-height: 40vh;
+  margin-top: 16%;
+  
 }
+.el10c p{
+  font-size: 0.8rem;
+}
+
 .el10child{
   width: 100%;
   height: 30vh;
@@ -1449,6 +1476,9 @@ grid-template-columns: auto;
 .bot5{
   min-width: 14%;
 }
+.ram{
+  margin-top: -55%;
+}
 }
 
 
@@ -1467,13 +1497,13 @@ grid-template-columns: auto;
      
     </div>
     <div class="nav-center">
-    <a href="">Home</a><a href="">About</a><a href="">Services</a><a href="">contact</a>
+    <a href="">Home</a><a href="">About</a><a href=>Services</a><a href="">contact</a>
     </div>
     <div class="nav-right">
       <i class="fa-brands fa-instagram" style="color:rgb(60, 190, 238)"></i>
-      <i class="fa-brands fa-twitter" style="margin-left: 4%; color:rgb(60, 190, 238)"></i>
-      <i class="fa-brands fa-facebook" style="margin-left: 4%; color:rgb(60, 190, 238)"></i>
-      <i class="fa-brands fa-linkedin" style="margin-left: 4%;color:rgb(60, 190, 238)"></i>
+      <i class="fa-brands fa-twitter" style="margin-left: 6%; color:rgb(60, 190, 238)"></i>
+      <i class="fa-brands fa-facebook" style="margin-left: 6%; color:rgb(60, 190, 238)"></i>
+      <i class="fa-brands fa-linkedin" style="margin-left: 6%;color:rgb(60, 190, 238)"></i>
     
       <p id="get-start" style="margin-left: 5%; margin-top:-5%" width="40%"  > getstarted</p>
     </div>
@@ -1484,7 +1514,7 @@ grid-template-columns: auto;
 
 
     
-    <section> 
+    <section id="home"> 
      
        <div class="el1">
         <!-- el1 starts -->
@@ -1736,7 +1766,7 @@ grid-template-columns: auto;
 
       <!-- section 3 ends -->
     </section>
-<section>
+<section id="services">
   <!-- section 4 starts -->
 
 <div class="el4">
@@ -1777,7 +1807,7 @@ grid-template-columns: auto;
 </div></center>
 <div class="el43"  >
 <!-- el43 starts -->
-<div class="el43a" >
+<div class="el43a">
   <div class="home" >
    <p style="text-align:center; margin-top:5%;"> <i class="fas fa-home fa-4x" style="color: rgb(60, 190, 238);  "></i></p>
     <p style="text-align: center; font-size:1.9rem; margin-top:8%;">Private Gazebo</p>
@@ -1840,7 +1870,7 @@ grid-template-columns: auto;
   <p style="color:grey; font-weight:500 ;font-size:1rem ;padding:3% 5% ;line-height:1.2;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.</p>
 <p><i class="fa fa-check text-primary me-2" style="color:rgb(60, 190, 238);padding:0%  6%  "></i> <span style=" color:grey; line-height:1.5">Best Waterpark in the world      </span> </p>
 <p><i class="fa fa-check text-primary me-2" style="color:rgb(60, 190, 238);padding: 0% 6% "></i> <span style=" color:grey; line-height:1.5">Best Packages For Your Family    </span> </p>
-<p><i class="fa fa-check text-primary me-2" style="color:rgb(60, 190, 238);padding: 0% 6%"></i> <span style=" color:grey; line-height:1.5">Enjoy Various Kinds of Water Park</span> </p>
+<p><i class="fa fa-check text-primary me-2" style="color:rgb(60, 190, 238);padding: 0% 6%"></i> <span style=" color:grey; line-height:1.5">Enjoy Various Kinds of Water </span> </p>
 <p><i class="fa fa-check text-primary me-2" style="color:rgb(60, 190, 238);padding: 0% 6%"></i> <span style=" color:grey; line-height:1.5">Win Up To 3 Free All Day Tickets </span> </p>
 <button class="R" style="padding:2% 3% ;width:40% ;height:7vh; margin-left:4%; margin-top:3%;">
   Book Now
@@ -2128,7 +2158,7 @@ grid-template-columns: auto;
 
   <!-- section 10 ends -->
  </section>
- <section>
+ <section >
   <!-- section 11 starts -->
 <div class="el11">
   <!-- el11 starts -->
@@ -2136,7 +2166,7 @@ grid-template-columns: auto;
   
   <h4 style="font-size:2rem; color:white; font-weight:400"><i class="fas fa-swimmer text-primary me-3" style="color: rgb(60, 190, 238); font-size:2rem;padding:5% 7%;"></i> Waterland</h4>
   <p style="padding:3% 7%;line-height:1.5;text-align:justify;color:grey">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
-  <h2><span ><i class="fas fa-map-marker-alt text-primary me-3" style="color:rgb(60, 190, 238);padding:9% 7%; margin-top:50%;"></i></span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15221.25187028858!2d78.38278298715818!3d17.49256740000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91936d056e29%3A0x2a05a43f22c3367c!2sTitan%20Eye%2B%20at%20Kukatpally%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1739964548613!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </h2>
+  <h2 class="ram"><span ><i class="fas fa-map-marker-alt text-primary me-3" style="color:rgb(60, 190, 238);padding:9% 7%; margin-top:50%;"></i></span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15221.25187028858!2d78.38278298715818!3d17.49256740000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91936d056e29%3A0x2a05a43f22c3367c!2sTitan%20Eye%2B%20at%20Kukatpally%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1739964548613!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </h2>
  <h6 style="color:white;"><span style="font-size: 1rem;font-weight:400;"><i class="fas fa-envelope text-primary me-3" style="color:rgb(60, 190, 238);font-size:1rem;padding:2% 7%"></i> rahul.gogikar04@gmail.com</span></h6>
  
  <h6 style="color: white;font-weight:400;font-size:1rem"><i class="fa fa-phone-alt text-primary me-3" style="color: rgb(60, 190, 238);font-size:1rem;padding:3% 7%"></i>(+91)9502514094</h6>
